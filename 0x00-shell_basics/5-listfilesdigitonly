@@ -1,2 +1,2 @@
 #!/bin/bash
-dir -ail
+ls -an
