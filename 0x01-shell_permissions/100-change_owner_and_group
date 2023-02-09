@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent:stuff
+chown vincent:stuff /0x01-shell_permissions
