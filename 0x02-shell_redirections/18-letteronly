@@ -1,0 +1,2 @@
+#!/bin/bash
+find /etc/ssh/sshd_config -type f -iname [[:letter:]]*
