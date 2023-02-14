@@ -1,2 +1,2 @@
-#!/bin/bash
-find /etc/ssh/sshd_config -type f -iname [[:letter:]]*
+#!bin/bash
+ls -l /etc/ssh/sshd_config | find -f [[:alpha:]]*
