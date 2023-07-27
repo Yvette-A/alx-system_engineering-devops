@@ -2,7 +2,7 @@
 #This script prints out best school using until loop
 
 count=0
-until [ $count -gt 10 ]
+until [ $count -gt 9 ]
 do
 	echo "Best School"
 	count=$((count + 1))
