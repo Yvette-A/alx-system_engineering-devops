@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #This script displays best school and hi using a while loop
 
-count=1
-while [ $count -le 10 ]
+count=0
+while [ $count -lt 10 ]
 do
 	echo "Best School"
 	count=$((count + 1))
