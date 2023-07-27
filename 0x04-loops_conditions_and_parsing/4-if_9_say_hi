@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#This script displays best school and hi using a while loop
+
+count=1
+while [ $count -le 9 ]
+do
+	echo "Best School"
+	count=$((count + 1))
+done
+echo Hi
+echo "Best School"
