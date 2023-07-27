@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this script prints out best school using a while loop
+
+count=0
+while [ $count -lt 10 ]
+do
+	echo "Best School"
+	count=$((count + 1))
+done
