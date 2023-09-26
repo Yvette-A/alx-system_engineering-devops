@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # Installs Nginx on my web server
 
-apt update
-apt install -y nginx
-
-mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html
+#Update the package list
+apt-get update
+# Install Nginx
+apt-get install -y nginx
+# Create the HTML directory (and parent directories if needed)
+mkdir -p /etc/nginx/html
 echo "Hello World!" > /etc/nginx/html/index.html
-printf %s "server {
+# Configure Nginx to listen on port 80
+echo "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
      root        /etc/nginx/html;
      index       index.html index.htm;
-}
-" > /etc/nginx/sites-available/default
-
+}" > /etc/nginx/sites-available/default
 service nginx restart
