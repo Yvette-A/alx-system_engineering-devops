@@ -3,5 +3,5 @@
 str = "Host *\nIdentityFile ~/.ssh/school\nPasswordAuthentication no"
 
 file { '~/.ssh/config':
-   content => str,
+   content => $str,
 }
