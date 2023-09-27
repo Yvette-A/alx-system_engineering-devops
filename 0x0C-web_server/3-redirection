@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #installs Nginx on my web server
-[Disconnected...]
 apt update
 apt install -y nginx
 
