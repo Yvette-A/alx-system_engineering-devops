@@ -1,4 +1,11 @@
-global
+#!/usr/bin/env bash
+# Installs HAProxy
+
+apt-get update
+apt-get install haproxy
+
+echo "ENABLED=1" >> /etc/default/haproxy
+printf %s "global
         log 127.0.0.1 local0 notice
         maxconn 2000
         user haproxy
@@ -24,3 +31,6 @@ backend web-servers
         option httpchk
         server 263171-web-01 100.25.12.203:80 check
         server 263171-web-02 52.201.229.36:80 check
+" >> /etc/haproxy/haproxy.cfg
+
+service haproxy start
